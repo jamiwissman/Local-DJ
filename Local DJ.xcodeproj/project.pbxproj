@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		564CE81F1C8290E500905423 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 564CE8191C8290E500905423 /* Bolts.framework */; };
+		564CE8201C8290E500905423 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 564CE81A1C8290E500905423 /* Parse.framework */; };
+		564CE8241C8290E500905423 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 564CE81E1C8290E500905423 /* ParseUI.framework */; };
+		566CFBDF1C82A4FA009AE6FC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 566CFBDE1C82A4FA009AE6FC /* AVFoundation.framework */; };
+		566CFBE31C82BC9D009AE6FC /* JoinPartyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566CFBE21C82BC9D009AE6FC /* JoinPartyViewController.swift */; };
+		56C5D27D1C76BC1C00862631 /* iPhone6PlusLocalDj3.png in Resources */ = {isa = PBXBuildFile; fileRef = 56C5D27C1C76BC1C00862631 /* iPhone6PlusLocalDj3.png */; };
+		56E60F451C799F7A00A1998E /* StartPartyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E60F441C799F7A00A1998E /* StartPartyViewController.swift */; };
+		56E60F541C79A11A00A1998E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56E60F531C79A11A00A1998E /* AudioToolbox.framework */; };
+		56E60F561C79A12400A1998E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56E60F551C79A12400A1998E /* CFNetwork.framework */; };
+		56E60F581C79A12D00A1998E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56E60F571C79A12D00A1998E /* CoreGraphics.framework */; };
+		56E60F5A1C79A13F00A1998E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56E60F591C79A13F00A1998E /* CoreLocation.framework */; };
+		56E60F5C1C79A14900A1998E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56E60F5B1C79A14900A1998E /* QuartzCore.framework */; };
+		56E60F5E1C79A15200A1998E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56E60F5D1C79A15200A1998E /* Security.framework */; };
+		56E60F601C79A15C00A1998E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56E60F5F1C79A15C00A1998E /* StoreKit.framework */; };
+		56E60F621C79A17600A1998E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 56E60F611C79A17600A1998E /* libz.tbd */; };
+		56E60F641C79A18300A1998E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 56E60F631C79A18300A1998E /* libsqlite3.tbd */; };
+		56EBAADD1C9B518700A26018 /* Arrow Down Red.png in Resources */ = {isa = PBXBuildFile; fileRef = 56EBAAD71C9B518700A26018 /* Arrow Down Red.png */; };
+		56EBAADE1C9B518700A26018 /* Arrow Down White.png in Resources */ = {isa = PBXBuildFile; fileRef = 56EBAAD81C9B518700A26018 /* Arrow Down White.png */; };
+		56EBAADF1C9B518700A26018 /* Arrow Up Green.png in Resources */ = {isa = PBXBuildFile; fileRef = 56EBAAD91C9B518700A26018 /* Arrow Up Green.png */; };
+		56EBAAE11C9B518700A26018 /* Arrow Up White.png in Resources */ = {isa = PBXBuildFile; fileRef = 56EBAADB1C9B518700A26018 /* Arrow Up White.png */; };
+		603B5FB01C6103FD00EF3426 /* PlayMusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603B5FAF1C6103FD00EF3426 /* PlayMusicTableViewCell.swift */; };
+		603F8CD01C59E003005ACB47 /* MusicQueueTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603F8CCF1C59E003005ACB47 /* MusicQueueTableViewController.swift */; };
+		6069B1101C57C4C4000CAE24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6069B10F1C57C4C4000CAE24 /* AppDelegate.swift */; };
+		6069B1121C57C4C4000CAE24 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6069B1111C57C4C4000CAE24 /* LoginViewController.swift */; };
+		6069B1151C57C4C4000CAE24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6069B1131C57C4C4000CAE24 /* Main.storyboard */; };
+		6069B1171C57C4C4000CAE24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6069B1161C57C4C4000CAE24 /* Assets.xcassets */; };
+		6069B11A1C57C4C4000CAE24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6069B1181C57C4C4000CAE24 /* LaunchScreen.storyboard */; };
+		6069B1251C57C650000CAE24 /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6069B1241C57C650000CAE24 /* Spotify.framework */; };
+		6069B1291C57CD85000CAE24 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6069B1281C57CD85000CAE24 /* SystemConfiguration.framework */; };
+		608C95B01C59E5AF000FF7DA /* SongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608C95AF1C59E5AF000FF7DA /* SongTableViewCell.swift */; };
+		60AB7BC91C765F01005187BA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB7BC81C765F01005187BA /* MainViewController.swift */; };
+		60FB3B091C7FA6BC0058ED03 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FB3B081C7FA6BC0058ED03 /* SearchTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		564CE8191C8290E500905423 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		564CE81A1C8290E500905423 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		564CE81E1C8290E500905423 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		566CFBDE1C82A4FA009AE6FC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		566CFBE21C82BC9D009AE6FC /* JoinPartyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinPartyViewController.swift; sourceTree = "<group>"; };
+		56C5D27C1C76BC1C00862631 /* iPhone6PlusLocalDj3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone6PlusLocalDj3.png; sourceTree = "<group>"; };
+		56E60F441C799F7A00A1998E /* StartPartyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartPartyViewController.swift; sourceTree = "<group>"; };
+		56E60F531C79A11A00A1998E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		56E60F551C79A12400A1998E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		56E60F571C79A12D00A1998E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		56E60F591C79A13F00A1998E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		56E60F5B1C79A14900A1998E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		56E60F5D1C79A15200A1998E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		56E60F5F1C79A15C00A1998E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		56E60F611C79A17600A1998E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		56E60F631C79A18300A1998E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		56EBAAD71C9B518700A26018 /* Arrow Down Red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Arrow Down Red.png"; sourceTree = "<group>"; };
+		56EBAAD81C9B518700A26018 /* Arrow Down White.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Arrow Down White.png"; sourceTree = "<group>"; };
+		56EBAAD91C9B518700A26018 /* Arrow Up Green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Arrow Up Green.png"; sourceTree = "<group>"; };
+		56EBAADB1C9B518700A26018 /* Arrow Up White.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Arrow Up White.png"; sourceTree = "<group>"; };
+		603B5FAF1C6103FD00EF3426 /* PlayMusicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayMusicTableViewCell.swift; sourceTree = "<group>"; };
+		603F8CCF1C59E003005ACB47 /* MusicQueueTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicQueueTableViewController.swift; sourceTree = "<group>"; };
+		6069B10C1C57C4C4000CAE24 /* Local DJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Local DJ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6069B10F1C57C4C4000CAE24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6069B1111C57C4C4000CAE24 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6069B1141C57C4C4000CAE24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6069B1161C57C4C4000CAE24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6069B1191C57C4C4000CAE24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6069B11B1C57C4C4000CAE24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6069B1241C57C650000CAE24 /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Spotify.framework; path = "ios-sdk-deploy/Spotify.framework"; sourceTree = "<group>"; };
+		6069B1281C57CD85000CAE24 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6069B1341C57D08B000CAE24 /* Local DJ-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Local DJ-Bridging-Header.h"; sourceTree = "<group>"; };
+		608C95AF1C59E5AF000FF7DA /* SongTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongTableViewCell.swift; sourceTree = "<group>"; };
+		609B63821C6D745100BE3FE4 /* Local DJ.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Local DJ.entitlements"; sourceTree = "<group>"; };
+		60AB7BC81C765F01005187BA /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../MainViewController.swift; sourceTree = "<group>"; };
+		60FB3B081C7FA6BC0058ED03 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6069B1091C57C4C4000CAE24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				566CFBDF1C82A4FA009AE6FC /* AVFoundation.framework in Frameworks */,
+				56E60F541C79A11A00A1998E /* AudioToolbox.framework in Frameworks */,
+				56E60F641C79A18300A1998E /* libsqlite3.tbd in Frameworks */,
+				56E60F621C79A17600A1998E /* libz.tbd in Frameworks */,
+				6069B1291C57CD85000CAE24 /* SystemConfiguration.framework in Frameworks */,
+				564CE8201C8290E500905423 /* Parse.framework in Frameworks */,
+				564CE8241C8290E500905423 /* ParseUI.framework in Frameworks */,
+				56E60F601C79A15C00A1998E /* StoreKit.framework in Frameworks */,
+				56E60F5E1C79A15200A1998E /* Security.framework in Frameworks */,
+				56E60F5C1C79A14900A1998E /* QuartzCore.framework in Frameworks */,
+				56E60F5A1C79A13F00A1998E /* CoreLocation.framework in Frameworks */,
+				56E60F581C79A12D00A1998E /* CoreGraphics.framework in Frameworks */,
+				56E60F561C79A12400A1998E /* CFNetwork.framework in Frameworks */,
+				6069B1251C57C650000CAE24 /* Spotify.framework in Frameworks */,
+				564CE81F1C8290E500905423 /* Bolts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		564CE8181C8290E500905423 /* parse-library-1.12.0 */ = {
+			isa = PBXGroup;
+			children = (
+				564CE8191C8290E500905423 /* Bolts.framework */,
+				564CE81A1C8290E500905423 /* Parse.framework */,
+				564CE81E1C8290E500905423 /* ParseUI.framework */,
+			);
+			path = "parse-library-1.12.0";
+			sourceTree = "<group>";
+		};
+		56E60F691C79A36D00A1998E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				56EBAAD51C9B518700A26018 /* UpDown Arrows */,
+				56C5D27C1C76BC1C00862631 /* iPhone6PlusLocalDj3.png */,
+			);
+			name = Images;
+			path = "Local DJ";
+			sourceTree = "<group>";
+		};
+		56EBAAD51C9B518700A26018 /* UpDown Arrows */ = {
+			isa = PBXGroup;
+			children = (
+				56EBAAD71C9B518700A26018 /* Arrow Down Red.png */,
+				56EBAAD81C9B518700A26018 /* Arrow Down White.png */,
+				56EBAAD91C9B518700A26018 /* Arrow Up Green.png */,
+				56EBAADB1C9B518700A26018 /* Arrow Up White.png */,
+			);
+			path = "UpDown Arrows";
+			sourceTree = "<group>";
+		};
+		6069B1031C57C4C4000CAE24 = {
+			isa = PBXGroup;
+			children = (
+				6069B1211C57C527000CAE24 /* Frameworks */,
+				6069B10E1C57C4C4000CAE24 /* Local DJ */,
+				6069B10D1C57C4C4000CAE24 /* Products */,
+				56E60F691C79A36D00A1998E /* Images */,
+			);
+			sourceTree = "<group>";
+		};
+		6069B10D1C57C4C4000CAE24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6069B10C1C57C4C4000CAE24 /* Local DJ.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6069B10E1C57C4C4000CAE24 /* Local DJ */ = {
+			isa = PBXGroup;
+			children = (
+				609B63821C6D745100BE3FE4 /* Local DJ.entitlements */,
+				6069B1131C57C4C4000CAE24 /* Main.storyboard */,
+				6069B10F1C57C4C4000CAE24 /* AppDelegate.swift */,
+				6069B1111C57C4C4000CAE24 /* LoginViewController.swift */,
+				60AB7BC81C765F01005187BA /* MainViewController.swift */,
+				566CFBE21C82BC9D009AE6FC /* JoinPartyViewController.swift */,
+				56E60F441C799F7A00A1998E /* StartPartyViewController.swift */,
+				60FB3B081C7FA6BC0058ED03 /* SearchTableViewCell.swift */,
+				603B5FAF1C6103FD00EF3426 /* PlayMusicTableViewCell.swift */,
+				603F8CCF1C59E003005ACB47 /* MusicQueueTableViewController.swift */,
+				608C95AF1C59E5AF000FF7DA /* SongTableViewCell.swift */,
+				6069B1161C57C4C4000CAE24 /* Assets.xcassets */,
+				6069B1181C57C4C4000CAE24 /* LaunchScreen.storyboard */,
+				6069B11B1C57C4C4000CAE24 /* Info.plist */,
+				6069B1341C57D08B000CAE24 /* Local DJ-Bridging-Header.h */,
+			);
+			path = "Local DJ";
+			sourceTree = "<group>";
+		};
+		6069B1211C57C527000CAE24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				566CFBDE1C82A4FA009AE6FC /* AVFoundation.framework */,
+				564CE8181C8290E500905423 /* parse-library-1.12.0 */,
+				56E60F631C79A18300A1998E /* libsqlite3.tbd */,
+				56E60F611C79A17600A1998E /* libz.tbd */,
+				56E60F5F1C79A15C00A1998E /* StoreKit.framework */,
+				56E60F5D1C79A15200A1998E /* Security.framework */,
+				56E60F5B1C79A14900A1998E /* QuartzCore.framework */,
+				56E60F591C79A13F00A1998E /* CoreLocation.framework */,
+				56E60F571C79A12D00A1998E /* CoreGraphics.framework */,
+				56E60F551C79A12400A1998E /* CFNetwork.framework */,
+				56E60F531C79A11A00A1998E /* AudioToolbox.framework */,
+				6069B1281C57CD85000CAE24 /* SystemConfiguration.framework */,
+				6069B1241C57C650000CAE24 /* Spotify.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6069B10B1C57C4C4000CAE24 /* Local DJ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6069B11E1C57C4C4000CAE24 /* Build configuration list for PBXNativeTarget "Local DJ" */;
+			buildPhases = (
+				6069B1081C57C4C4000CAE24 /* Sources */,
+				6069B1091C57C4C4000CAE24 /* Frameworks */,
+				6069B10A1C57C4C4000CAE24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Local DJ";
+			productName = "Local DJ";
+			productReference = 6069B10C1C57C4C4000CAE24 /* Local DJ.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6069B1041C57C4C4000CAE24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Jami Wissman";
+				TargetAttributes = {
+					6069B10B1C57C4C4000CAE24 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = LR5W59S352;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 6069B1071C57C4C4000CAE24 /* Build configuration list for PBXProject "Local DJ" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6069B1031C57C4C4000CAE24;
+			productRefGroup = 6069B10D1C57C4C4000CAE24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6069B10B1C57C4C4000CAE24 /* Local DJ */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6069B10A1C57C4C4000CAE24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56EBAAE11C9B518700A26018 /* Arrow Up White.png in Resources */,
+				6069B11A1C57C4C4000CAE24 /* LaunchScreen.storyboard in Resources */,
+				6069B1171C57C4C4000CAE24 /* Assets.xcassets in Resources */,
+				56EBAADE1C9B518700A26018 /* Arrow Down White.png in Resources */,
+				56C5D27D1C76BC1C00862631 /* iPhone6PlusLocalDj3.png in Resources */,
+				56EBAADD1C9B518700A26018 /* Arrow Down Red.png in Resources */,
+				6069B1151C57C4C4000CAE24 /* Main.storyboard in Resources */,
+				56EBAADF1C9B518700A26018 /* Arrow Up Green.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6069B1081C57C4C4000CAE24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60FB3B091C7FA6BC0058ED03 /* SearchTableViewCell.swift in Sources */,
+				608C95B01C59E5AF000FF7DA /* SongTableViewCell.swift in Sources */,
+				56E60F451C799F7A00A1998E /* StartPartyViewController.swift in Sources */,
+				6069B1121C57C4C4000CAE24 /* LoginViewController.swift in Sources */,
+				6069B1101C57C4C4000CAE24 /* AppDelegate.swift in Sources */,
+				60AB7BC91C765F01005187BA /* MainViewController.swift in Sources */,
+				566CFBE31C82BC9D009AE6FC /* JoinPartyViewController.swift in Sources */,
+				603B5FB01C6103FD00EF3426 /* PlayMusicTableViewCell.swift in Sources */,
+				603F8CD01C59E003005ACB47 /* MusicQueueTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6069B1131C57C4C4000CAE24 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6069B1141C57C4C4000CAE24 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6069B1181C57C4C4000CAE24 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6069B1191C57C4C4000CAE24 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6069B11C1C57C4C4000CAE24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6069B11D1C57C4C4000CAE24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6069B11F1C57C4C4000CAE24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ios-sdk-deploy",
+					"$(PROJECT_DIR)/parse-library-1.12.0",
+					"$(PROJECT_DIR)/FacebookSDKs-iOS-20160210",
+				);
+				INFOPLIST_FILE = "Local DJ/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Local-DJ";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Local DJ/Local DJ-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6069B1201C57C4C4000CAE24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ios-sdk-deploy",
+					"$(PROJECT_DIR)/parse-library-1.12.0",
+					"$(PROJECT_DIR)/FacebookSDKs-iOS-20160210",
+				);
+				INFOPLIST_FILE = "Local DJ/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Local-DJ";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Local DJ/Local DJ-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6069B1071C57C4C4000CAE24 /* Build configuration list for PBXProject "Local DJ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6069B11C1C57C4C4000CAE24 /* Debug */,
+				6069B11D1C57C4C4000CAE24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6069B11E1C57C4C4000CAE24 /* Build configuration list for PBXNativeTarget "Local DJ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6069B11F1C57C4C4000CAE24 /* Debug */,
+				6069B1201C57C4C4000CAE24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6069B1041C57C4C4000CAE24 /* Project object */;
+}
