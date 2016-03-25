@@ -223,7 +223,7 @@ class MusicQueueTableViewController: UITableViewController,  SPTAudioStreamingPl
     }
     
     @IBAction func upVote(sender: AnyObject?){
-    
+        
         let tag:NSInteger = sender!.tag
         let indexPath = NSIndexPath(forRow: tag, inSection: 0)
         let cell = tableView.cellForRowAtIndexPath(indexPath) as! SongTableViewCell
@@ -231,39 +231,48 @@ class MusicQueueTableViewController: UITableViewController,  SPTAudioStreamingPl
         if cell.voted == "no" {
             
             cell.voted = "up"
+            
             // Select up button.
             cell.upButton.setImage(UIImage(named:"Arrow Up Green.png"), forState: UIControlState.Normal)
             
         } else if cell.voted == "down" {
             
             cell.voted = "up"
+            
             // Unselect down button.
             cell.downButton.setImage(UIImage(named:"Arrow Down White.png"), forState: UIControlState.Normal)
+            
             // Select up button.
             cell.upButton.setImage(UIImage(named:"Arrow Up Green.png"), forState: UIControlState.Normal)
+            
+        } else if cell.voted == "up" {
+            // If already selected and pressed - unselect
+            
+            cell.voted = "no"
+            
+            // Unselect up button.
+            cell.upButton.setImage(UIImage(named:"Arrow Up White.png"), forState: UIControlState.Normal)
         }
         
         
-//        If we have more than one section we need this:
-//        let position:CGPoint = sender.convertPoint(CGPointZero, toView: self.tableView)
-//        if let indexPath = self.tableView.indexPathForRowAtPoint(position) {
-//        
-//            let section = indexPath.section
-//            let row = indexPath.row
-//            let indexPath = NSIndexPath(forRow: row, inSection: section)
-//            let cell = tableView.cellForRowAtIndexPath(indexPath) as! SongTableViewCell
-//            cell.songTitleLabel.textColor = UIColor.greenColor()
-//        }
-        
-        
+        //        If we have more than one section we need this:
+        //        let position:CGPoint = sender.convertPoint(CGPointZero, toView: self.tableView)
+        //        if let indexPath = self.tableView.indexPathForRowAtPoint(position) {
+        //
+        //            let section = indexPath.section
+        //            let row = indexPath.row
+        //            let indexPath = NSIndexPath(forRow: row, inSection: section)
+        //            let cell = tableView.cellForRowAtIndexPath(indexPath) as! SongTableViewCell
+        //            cell.songTitleLabel.textColor = UIColor.greenColor()
+        //        }
         
         // Needs work
-//        let temp = songQueue[sender.tag - 1]
-//        songQueue[sender.tag - 1] = songQueue[sender.tag]
-//        songQueue[sender.tag] = temp
-//        self.tableView.reloadData()
+        //        let temp = songQueue[sender.tag - 1]
+        //        songQueue[sender.tag - 1] = songQueue[sender.tag]
+        //        songQueue[sender.tag] = temp
+        //        self.tableView.reloadData()
         
-         }
+    }
     
     
     @IBAction func downVote(sender: AnyObject?){
@@ -273,36 +282,45 @@ class MusicQueueTableViewController: UITableViewController,  SPTAudioStreamingPl
         let indexPath = NSIndexPath(forRow: tag, inSection: 0)
         let cell = tableView.cellForRowAtIndexPath(indexPath) as! SongTableViewCell
         
-    
+        
         if cell.voted == "no" {
             
             cell.voted = "down"
+            
             // Select up button.
-            cell.upButton.setImage(UIImage(named:"Arrow Up Green.png"), forState: UIControlState.Normal)
+            cell.downButton.setImage(UIImage(named:"Arrow Down Red.png"), forState: UIControlState.Normal)
             
         } else if cell.voted == "up" {
             
             cell.voted = "down"
+            
             // Unselect up button.
             cell.upButton.setImage(UIImage(named:"Arrow Up White.png"), forState: UIControlState.Normal)
+            
             // Select down button.
             cell.downButton.setImage(UIImage(named:"Arrow Down Red.png"), forState: UIControlState.Normal)
+            
+        } else if cell.voted == "down" {
+            // If already selected and pressed - unselect
+            
+            cell.voted = "no"
+            
+            // Unselect down button.
+            cell.downButton.setImage(UIImage(named:"Arrow Down White.png"), forState: UIControlState.Normal)
+            
         }
-
         
-        
-//        If we have more than one section we need this:
-//        let position:CGPoint = sender.convertPoint(CGPointZero, toView: self.tableView)
-//        if let indexPath = self.tableView.indexPathForRowAtPoint(position) {
-//
-//            let section = indexPath.section
-//            let row = indexPath.row
-//            let indexPath = NSIndexPath(forRow: row, inSection: section)
-//            let cell = tableView.cellForRowAtIndexPath(indexPath) as! SongTableViewCell
-//            cell.songTitleLabel.textColor = UIColor.greenColor()
-//        }
+        //        If we have more than one section we need this:
+        //        let position:CGPoint = sender.convertPoint(CGPointZero, toView: self.tableView)
+        //        if let indexPath = self.tableView.indexPathForRowAtPoint(position) {
+        //
+        //            let section = indexPath.section
+        //            let row = indexPath.row
+        //            let indexPath = NSIndexPath(forRow: row, inSection: section)
+        //            let cell = tableView.cellForRowAtIndexPath(indexPath) as! SongTableViewCell
+        //            cell.songTitleLabel.textColor = UIColor.greenColor()
+        //        }
     }
-    
     
     @IBAction func AddSongButton(sender: AnyObject) {
         addSong = true
