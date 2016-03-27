@@ -235,9 +235,6 @@ class MusicQueueTableViewController: UITableViewController,  SPTAudioStreamingPl
     }
     
     @IBAction func upVote(sender: AnyObject?){
-    
-        
-        print(songQueue)
         
         let tag:NSInteger = sender!.tag
         let indexPath = NSIndexPath(forRow: tag, inSection: 0)
@@ -322,7 +319,6 @@ class MusicQueueTableViewController: UITableViewController,  SPTAudioStreamingPl
             
             // Unselect down button.
             cell.downButton.setImage(UIImage(named:"Arrow Down White.png"), forState: UIControlState.Normal)
-            
         }
         
 //        If we have more than one section we need this:
@@ -337,8 +333,6 @@ class MusicQueueTableViewController: UITableViewController,  SPTAudioStreamingPl
 //        }
     }
     
-    
-    
     @IBAction func AddSongButton(sender: AnyObject) {
         addSong = true
         self.tableView.reloadData()
@@ -348,7 +342,11 @@ class MusicQueueTableViewController: UITableViewController,  SPTAudioStreamingPl
         searchActive = false
         let itemNum:Int = sender.tag - 2
         songQueue.append(searchResultsList[itemNum])
-        UpdateDBVotes().addNewSong(partyName, xxxx: searchResultsList[itemNum])
+        
+        var uri: NSURL = searchResultsList[itemNum].uri
+        var stringUri: String = uri.absoluteString
+        UpdateDBVotes().addNewSong(partyName, uri: stringUri)
+        
         self.tableView.reloadData()
     }
     

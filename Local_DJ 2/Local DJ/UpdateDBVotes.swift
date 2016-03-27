@@ -11,13 +11,34 @@ import Parse
 
 class UpdateDBVotes: NSObject {
     
-    func addNewSong(partyName: String, xxxx: AnyObject)
+    func addNewSong(partyName: String, uri: String)
     {
         var votesTable = PFObject(className:"Votes")
         votesTable["partyName"] = partyName
+        votesTable["uri"] = uri
         votesTable["rating"] = 0
 
 
+        votesTable.saveInBackgroundWithBlock {
+            (success: Bool, error: NSError?) -> Void in
+            if (success) {
+                // The object has been saved.
+            } else {
+                // There was a problem, check error.description
+            }
+        }
+    }
+    
+    func deleteSong(partyName: String, uri: String)
+    {
+        
+    }
+    
+    func changeRating(num: Int, uri: String)
+    {
+        var votesTable = PFObject(className:"Votes")
+       // where uri == URI
+        
         votesTable.saveInBackgroundWithBlock {
             (success: Bool, error: NSError?) -> Void in
             if (success) {
