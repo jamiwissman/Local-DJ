@@ -348,6 +348,7 @@ class MusicQueueTableViewController: UITableViewController,  SPTAudioStreamingPl
         searchActive = false
         let itemNum:Int = sender.tag - 2
         songQueue.append(searchResultsList[itemNum])
+        UpdateDBVotes().addNewSong(partyName, xxxx: searchResultsList[itemNum])
         self.tableView.reloadData()
     }
     
@@ -358,6 +359,7 @@ class MusicQueueTableViewController: UITableViewController,  SPTAudioStreamingPl
             
             self.searchResultsList = searchResults.items
             self.numSearchResults = self.searchResultsList.count
+
             self.tableView.reloadData()
         }
     }

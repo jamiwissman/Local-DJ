@@ -10,6 +10,7 @@
 		564CE81F1C8290E500905423 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 564CE8191C8290E500905423 /* Bolts.framework */; };
 		564CE8201C8290E500905423 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 564CE81A1C8290E500905423 /* Parse.framework */; };
 		564CE8241C8290E500905423 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 564CE81E1C8290E500905423 /* ParseUI.framework */; };
+		5664F9E01CA76D2400E215DD /* UpdateDBVotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664F9DF1CA76D2400E215DD /* UpdateDBVotes.swift */; };
 		566CFBDF1C82A4FA009AE6FC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 566CFBDE1C82A4FA009AE6FC /* AVFoundation.framework */; };
 		566CFBE31C82BC9D009AE6FC /* JoinPartyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566CFBE21C82BC9D009AE6FC /* JoinPartyViewController.swift */; };
 		56C5D27D1C76BC1C00862631 /* iPhone6PlusLocalDj3.png in Resources */ = {isa = PBXBuildFile; fileRef = 56C5D27C1C76BC1C00862631 /* iPhone6PlusLocalDj3.png */; };
@@ -45,6 +46,7 @@
 		564CE8191C8290E500905423 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		564CE81A1C8290E500905423 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		564CE81E1C8290E500905423 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		5664F9DF1CA76D2400E215DD /* UpdateDBVotes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateDBVotes.swift; sourceTree = "<group>"; };
 		566CFBDE1C82A4FA009AE6FC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		566CFBE21C82BC9D009AE6FC /* JoinPartyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinPartyViewController.swift; sourceTree = "<group>"; };
 		56C5D27C1C76BC1C00862631 /* iPhone6PlusLocalDj3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone6PlusLocalDj3.png; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				603F8CCF1C59E003005ACB47 /* MusicQueueTableViewController.swift */,
 				608C95AF1C59E5AF000FF7DA /* SongTableViewCell.swift */,
 				6069B1161C57C4C4000CAE24 /* Assets.xcassets */,
+				5664F9DF1CA76D2400E215DD /* UpdateDBVotes.swift */,
 				6069B1181C57C4C4000CAE24 /* LaunchScreen.storyboard */,
 				6069B11B1C57C4C4000CAE24 /* Info.plist */,
 				6069B1341C57D08B000CAE24 /* Local DJ-Bridging-Header.h */,
@@ -290,6 +293,7 @@
 				60AB7BC91C765F01005187BA /* MainViewController.swift in Sources */,
 				566CFBE31C82BC9D009AE6FC /* JoinPartyViewController.swift in Sources */,
 				603B5FB01C6103FD00EF3426 /* PlayMusicTableViewCell.swift in Sources */,
+				5664F9E01CA76D2400E215DD /* UpdateDBVotes.swift in Sources */,
 				603F8CD01C59E003005ACB47 /* MusicQueueTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

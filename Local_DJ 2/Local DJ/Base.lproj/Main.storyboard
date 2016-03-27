@@ -296,7 +296,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="86" sectionHeaderHeight="28" sectionFooterHeight="28" id="6Qt-ue-UXV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.15194535255432129" green="0.18421635031700134" blue="0.19683161377906799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlayCell" id="pdm-BK-VKQ" customClass="PlayMusicTableViewCell" customModule="Local_DJ" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="86"/>
@@ -366,6 +366,7 @@
                                             </connections>
                                         </button>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.73061394691467285" green="0.34196866136722798" blue="0.34534698383208029" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstItem="G1R-fj-USV" firstAttribute="top" secondItem="WZM-sF-42m" secondAttribute="top" id="0ZG-e3-G9r"/>
                                         <constraint firstItem="gYr-PP-I5j" firstAttribute="top" secondItem="8OD-Js-rNe" secondAttribute="topMargin" constant="5" id="23m-Hp-H5E"/>
@@ -381,7 +382,7 @@
                                         <constraint firstItem="Qpv-mz-mxd" firstAttribute="leading" secondItem="8OD-Js-rNe" secondAttribute="leadingMargin" constant="6" id="mAp-e4-Rbl"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.15194535255432129" green="0.18421635031700134" blue="0.19683161377906799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="partyNameLabel" destination="gYr-PP-I5j" id="eGg-lE-j1h"/>
                                 </connections>
