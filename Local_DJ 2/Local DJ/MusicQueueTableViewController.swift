@@ -120,8 +120,8 @@ class MusicQueueTableViewController: UITableViewController,  SPTAudioStreamingPl
                 cell.upButton.tag = indexPath.row
                 cell.downButton.tag = indexPath.row
                 
-                cell.upButton.addTarget(self, action: "upVote:", forControlEvents: .TouchUpInside)
-                cell.downButton.addTarget(self, action: "downVote:", forControlEvents: .TouchUpInside)
+                cell.upButton.addTarget(self, action: #selector(MusicQueueTableViewController.upVote(_:)), forControlEvents: .TouchUpInside)
+                cell.downButton.addTarget(self, action: #selector(MusicQueueTableViewController.downVote(_:)), forControlEvents: .TouchUpInside)
                 
 
                 return cell
@@ -179,6 +179,18 @@ class MusicQueueTableViewController: UITableViewController,  SPTAudioStreamingPl
         }
     }
     
+    
+    // In order to delete rows.
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == .Delete && addSong == false && indexPath.row != 0 {
+            // Delete the row from the data source
+            songQueue.removeAtIndex(indexPath.row - 1)
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+        }
+    }
+    
+    
+    
     func playUsingSession(sessionObj:SPTSession!){
         if player == nil {
             player = SPTAudioStreamingController(clientId: clientID)
@@ -223,6 +235,9 @@ class MusicQueueTableViewController: UITableViewController,  SPTAudioStreamingPl
     }
     
     @IBAction func upVote(sender: AnyObject?){
+    
+        
+        print(songQueue)
         
         let tag:NSInteger = sender!.tag
         let indexPath = NSIndexPath(forRow: tag, inSection: 0)
@@ -246,7 +261,7 @@ class MusicQueueTableViewController: UITableViewController,  SPTAudioStreamingPl
             cell.upButton.setImage(UIImage(named:"Arrow Up Green.png"), forState: UIControlState.Normal)
             
         } else if cell.voted == "up" {
-            // If already selected and pressed - unselect
+             // If already selected and pressed - unselect
             
             cell.voted = "no"
             
@@ -255,24 +270,24 @@ class MusicQueueTableViewController: UITableViewController,  SPTAudioStreamingPl
         }
         
         
-        //        If we have more than one section we need this:
-        //        let position:CGPoint = sender.convertPoint(CGPointZero, toView: self.tableView)
-        //        if let indexPath = self.tableView.indexPathForRowAtPoint(position) {
-        //
-        //            let section = indexPath.section
-        //            let row = indexPath.row
-        //            let indexPath = NSIndexPath(forRow: row, inSection: section)
-        //            let cell = tableView.cellForRowAtIndexPath(indexPath) as! SongTableViewCell
-        //            cell.songTitleLabel.textColor = UIColor.greenColor()
-        //        }
+//        If we have more than one section we need this:
+//        let position:CGPoint = sender.convertPoint(CGPointZero, toView: self.tableView)
+//        if let indexPath = self.tableView.indexPathForRowAtPoint(position) {
+//        
+//            let section = indexPath.section
+//            let row = indexPath.row
+//            let indexPath = NSIndexPath(forRow: row, inSection: section)
+//            let cell = tableView.cellForRowAtIndexPath(indexPath) as! SongTableViewCell
+//            cell.songTitleLabel.textColor = UIColor.greenColor()
+//        }
         
         // Needs work
-        //        let temp = songQueue[sender.tag - 1]
-        //        songQueue[sender.tag - 1] = songQueue[sender.tag]
-        //        songQueue[sender.tag] = temp
-        //        self.tableView.reloadData()
+//        let temp = songQueue[sender.tag - 1]
+//        songQueue[sender.tag - 1] = songQueue[sender.tag]
+//        songQueue[sender.tag] = temp
+//        self.tableView.reloadData()
         
-    }
+         }
     
     
     @IBAction func downVote(sender: AnyObject?){
@@ -282,7 +297,7 @@ class MusicQueueTableViewController: UITableViewController,  SPTAudioStreamingPl
         let indexPath = NSIndexPath(forRow: tag, inSection: 0)
         let cell = tableView.cellForRowAtIndexPath(indexPath) as! SongTableViewCell
         
-        
+    
         if cell.voted == "no" {
             
             cell.voted = "down"
@@ -310,17 +325,19 @@ class MusicQueueTableViewController: UITableViewController,  SPTAudioStreamingPl
             
         }
         
-        //        If we have more than one section we need this:
-        //        let position:CGPoint = sender.convertPoint(CGPointZero, toView: self.tableView)
-        //        if let indexPath = self.tableView.indexPathForRowAtPoint(position) {
-        //
-        //            let section = indexPath.section
-        //            let row = indexPath.row
-        //            let indexPath = NSIndexPath(forRow: row, inSection: section)
-        //            let cell = tableView.cellForRowAtIndexPath(indexPath) as! SongTableViewCell
-        //            cell.songTitleLabel.textColor = UIColor.greenColor()
-        //        }
+//        If we have more than one section we need this:
+//        let position:CGPoint = sender.convertPoint(CGPointZero, toView: self.tableView)
+//        if let indexPath = self.tableView.indexPathForRowAtPoint(position) {
+//
+//            let section = indexPath.section
+//            let row = indexPath.row
+//            let indexPath = NSIndexPath(forRow: row, inSection: section)
+//            let cell = tableView.cellForRowAtIndexPath(indexPath) as! SongTableViewCell
+//            cell.songTitleLabel.textColor = UIColor.greenColor()
+//        }
     }
+    
+    
     
     @IBAction func AddSongButton(sender: AnyObject) {
         addSong = true

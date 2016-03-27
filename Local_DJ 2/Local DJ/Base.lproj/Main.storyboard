@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUj-h8-w6f">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUj-h8-w6f">
                                 <rect key="frame" x="-39" y="324" width="493" height="88"/>
                                 <state key="normal" title=" " image="LoginButton"/>
                                 <connections>
@@ -399,27 +399,17 @@
                                                 <constraint firstAttribute="width" constant="69" id="Bm0-iy-JLu"/>
                                             </constraints>
                                         </imageView>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLQ-7P-O3v">
-                                            <rect key="frame" x="343" y="8" width="35" height="28"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="28" id="CCn-ub-mBD"/>
-                                                <constraint firstAttribute="width" constant="35" id="QgO-6W-xUr"/>
-                                            </constraints>
-                                            <state key="normal" title="Up" image="Arrow Up White.png">
-                                                <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </state>
-                                        </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adV-HR-8z7">
-                                            <rect key="frame" x="343" y="50" width="35" height="28"/>
+                                            <rect key="frame" x="269" y="23" width="48" height="40"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="35" id="YVC-CE-VOJ"/>
-                                                <constraint firstAttribute="height" constant="28" id="mPO-aX-tkF"/>
+                                                <constraint firstAttribute="width" constant="48" id="Ed4-lg-f98"/>
+                                                <constraint firstAttribute="height" constant="40" id="d3t-uD-IYu"/>
                                             </constraints>
                                             <state key="normal" title="Down" image="Arrow Down White.png">
                                                 <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
                                         </button>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bmc-xJ-H3j">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Song Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bmc-xJ-H3j">
                                             <rect key="frame" x="85" y="15" width="222" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="KXD-WH-OxI"/>
@@ -428,27 +418,35 @@
                                             <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MOW-pE-csO">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MOW-pE-csO">
                                             <rect key="frame" x="85" y="44" width="150" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLQ-7P-O3v">
+                                            <rect key="frame" x="350" y="23" width="48" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="48" id="KYX-vl-9Le"/>
+                                                <constraint firstAttribute="height" constant="40" id="W41-2D-Fs1"/>
+                                            </constraints>
+                                            <state key="normal" title="Up" image="Arrow Up White.png">
+                                                <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                        </button>
                                     </subviews>
                                     <color key="backgroundColor" red="0.15194535255432129" green="0.18421635031700134" blue="0.19683161377906799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="lLQ-7P-O3v" secondAttribute="trailing" constant="28" id="7yE-3I-95G"/>
+                                        <constraint firstItem="lLQ-7P-O3v" firstAttribute="leading" secondItem="adV-HR-8z7" secondAttribute="trailing" constant="33" id="5Dy-ev-CIm"/>
+                                        <constraint firstItem="adV-HR-8z7" firstAttribute="top" secondItem="u2f-Zt-Tbi" secondAttribute="topMargin" constant="15" id="9Hy-EG-Jqo"/>
                                         <constraint firstItem="Bmc-xJ-H3j" firstAttribute="leading" secondItem="1dh-cr-S3a" secondAttribute="trailing" constant="8" id="BH9-w9-m1f"/>
                                         <constraint firstItem="MOW-pE-csO" firstAttribute="leading" secondItem="1dh-cr-S3a" secondAttribute="trailing" constant="8" id="H70-EJ-KHq"/>
+                                        <constraint firstItem="lLQ-7P-O3v" firstAttribute="top" secondItem="u2f-Zt-Tbi" secondAttribute="topMargin" constant="15" id="JHT-Az-Gdv"/>
                                         <constraint firstItem="Bmc-xJ-H3j" firstAttribute="top" secondItem="u2f-Zt-Tbi" secondAttribute="topMargin" constant="7" id="Lp6-3Z-nhr"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="MOW-pE-csO" secondAttribute="bottom" constant="12.5" id="P1N-sA-9k5"/>
-                                        <constraint firstItem="lLQ-7P-O3v" firstAttribute="leading" secondItem="Bmc-xJ-H3j" secondAttribute="trailing" constant="36" id="UMs-X7-H4T"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="adV-HR-8z7" secondAttribute="bottom" constant="-0.5" id="lKf-CK-r1g"/>
-                                        <constraint firstItem="lLQ-7P-O3v" firstAttribute="top" secondItem="u2f-Zt-Tbi" secondAttribute="topMargin" id="m67-cj-FTP"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="lLQ-7P-O3v" secondAttribute="trailing" constant="8" id="ceU-Nt-gdV"/>
                                         <constraint firstItem="MOW-pE-csO" firstAttribute="leading" secondItem="1dh-cr-S3a" secondAttribute="trailing" constant="8" symbolic="YES" id="mHI-gq-2Br"/>
                                         <constraint firstItem="1dh-cr-S3a" firstAttribute="leading" secondItem="u2f-Zt-Tbi" secondAttribute="leadingMargin" id="sB1-xc-8Ur"/>
-                                        <constraint firstItem="adV-HR-8z7" firstAttribute="leading" secondItem="MOW-pE-csO" secondAttribute="trailing" constant="108" id="w6E-qa-sX6"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="adV-HR-8z7" secondAttribute="trailing" constant="28" id="xRc-pA-N28"/>
                                         <constraint firstItem="1dh-cr-S3a" firstAttribute="centerY" secondItem="u2f-Zt-Tbi" secondAttribute="centerY" id="xsK-fJ-mTD"/>
                                     </constraints>
                                 </tableViewCellContentView>
