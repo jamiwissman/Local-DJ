@@ -13,7 +13,7 @@ class UpdateDBVotes: NSObject {
     
     func addNewSong(partyName: String, uri: String)
     {
-        var votesTable = PFObject(className:"Votes")
+        let votesTable = PFObject(className:"Votes")
         votesTable["partyName"] = partyName
         votesTable["uri"] = uri
         votesTable["rating"] = 0
@@ -36,7 +36,7 @@ class UpdateDBVotes: NSObject {
     
     func changeRating(num: Int, uri: String)
     {
-        var votesTable = PFObject(className:"Votes")
+        let votesTable = PFObject(className:"Votes")
        // where uri == URI
         
         votesTable.saveInBackgroundWithBlock {

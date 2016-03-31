@@ -29,7 +29,7 @@ class StartPartyViewController: UIViewController, UITextFieldDelegate {
     @IBAction func startPressed(sender: AnyObject) {
         
         if (mytextField.text != "") {
-            var party = PFObject(className:"Parties")
+            let party = PFObject(className:"Parties")
             party["name"] = mytextField.text
             if mySwitch.on {
                 party["private"] = true
@@ -75,7 +75,7 @@ class StartPartyViewController: UIViewController, UITextFieldDelegate {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         if (segue.identifier == "partyStarted") {
-            var mq = segue.destinationViewController as! MusicQueueTableViewController
+            let mq = segue.destinationViewController as! MusicQueueTableViewController
             mq.partyName = mytextField.text!
         }
         

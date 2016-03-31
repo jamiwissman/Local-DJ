@@ -343,8 +343,8 @@ class MusicQueueTableViewController: UITableViewController,  SPTAudioStreamingPl
         let itemNum:Int = sender.tag - 2
         songQueue.append(searchResultsList[itemNum])
         
-        var uri: NSURL = searchResultsList[itemNum].uri
-        var stringUri: String = uri.absoluteString
+        let uri: NSURL = searchResultsList[itemNum].uri
+        let stringUri: String = uri.absoluteString
         UpdateDBVotes().addNewSong(partyName, uri: stringUri)
         
         self.tableView.reloadData()
