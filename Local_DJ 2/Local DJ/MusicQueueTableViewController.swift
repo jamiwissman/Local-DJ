@@ -245,12 +245,16 @@ class MusicQueueTableViewController: UITableViewController,  SPTAudioStreamingPl
             
             cell.voted = "up"
             
+            UpdateDBVotes().changeRatingBy(partyName, uri: "xxxx", num: 1)
+            
             // Select up button.
             cell.upButton.setImage(UIImage(named:"Arrow Up Green.png"), forState: UIControlState.Normal)
             
         } else if cell.voted == "down" {
             
             cell.voted = "up"
+            
+            UpdateDBVotes().changeRatingBy(partyName, uri: "xxxx", num: 2)
             
             // Unselect down button.
             cell.downButton.setImage(UIImage(named:"Arrow Down White.png"), forState: UIControlState.Normal)
@@ -262,6 +266,8 @@ class MusicQueueTableViewController: UITableViewController,  SPTAudioStreamingPl
              // If already selected and pressed - unselect
             
             cell.voted = "no"
+            
+            UpdateDBVotes().changeRatingBy(partyName, uri: "xxxx", num: -1)
             
             // Unselect up button.
             cell.upButton.setImage(UIImage(named:"Arrow Up White.png"), forState: UIControlState.Normal)
@@ -300,12 +306,16 @@ class MusicQueueTableViewController: UITableViewController,  SPTAudioStreamingPl
             
             cell.voted = "down"
             
+            UpdateDBVotes().changeRatingBy(partyName, uri: "xxxx", num: -1)
+            
             // Select up button.
             cell.downButton.setImage(UIImage(named:"Arrow Down Red.png"), forState: UIControlState.Normal)
             
         } else if cell.voted == "up" {
             
             cell.voted = "down"
+            
+            UpdateDBVotes().changeRatingBy(partyName, uri: "xxxx", num: -2)
             
             // Unselect up button.
             cell.upButton.setImage(UIImage(named:"Arrow Up White.png"), forState: UIControlState.Normal)
@@ -317,6 +327,8 @@ class MusicQueueTableViewController: UITableViewController,  SPTAudioStreamingPl
             // If already selected and pressed - unselect
             
             cell.voted = "no"
+            
+            UpdateDBVotes().changeRatingBy(partyName, uri: "xxxx", num: 1)
             
             // Unselect down button.
             cell.downButton.setImage(UIImage(named:"Arrow Down White.png"), forState: UIControlState.Normal)
