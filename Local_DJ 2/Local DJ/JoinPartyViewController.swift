@@ -12,6 +12,8 @@ class JoinPartyViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        UpdateDBVotes().changeRatingBy("s", uri: "xxxx", num: -9)
 
         // Do any additional setup after loading the view.
     }

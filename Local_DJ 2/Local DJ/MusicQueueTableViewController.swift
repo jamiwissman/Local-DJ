@@ -186,6 +186,7 @@ class MusicQueueTableViewController: UITableViewController,  SPTAudioStreamingPl
             // Delete the row from the data source
             songQueue.removeAtIndex(indexPath.row - 1)
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+            UpdateDBVotes().deleteSong(partyName, uri: "x") // fix it later
         }
     }
     

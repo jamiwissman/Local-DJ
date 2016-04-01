@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 var globalSession:SPTSession!
 
 class LoginViewController: UIViewController {
@@ -27,6 +28,8 @@ class LoginViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
+
+        
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(LoginViewController.updateAfterFirstLogin), name: "loginSuccessful", object: nil)
         
         let userDefaults = NSUserDefaults.standardUserDefaults()
