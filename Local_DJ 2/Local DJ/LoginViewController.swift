@@ -14,6 +14,7 @@ var globalSession:SPTSession!
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var webView: UIWebView!
     
     let clientID = "6be42602926140ffbedb14f2d2f4029b"
     let redirectURL = "Local-DJ://returnAfterLogin"
@@ -24,6 +25,10 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        webView.opaque = true
+        webView.backgroundColor = UIColor.clearColor()
+        webView.alpha = 0
         loginButton.hidden = true
     }
     
@@ -85,7 +90,10 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func loginWithSpotify(sender: AnyObject) {
+        
         let auth = SPTAuth.defaultInstance()
+        
+        webView.alpha = 1
         
         auth.clientID = clientID
         auth.redirectURL = NSURL(string: redirectURL)
@@ -94,7 +102,11 @@ class LoginViewController: UIViewController {
         
         let loginURL = auth.loginURL
         sleep(1)
-        UIApplication.sharedApplication().openURL(loginURL)
+        
+        //UIApplication.sharedApplication().openURL(loginURL)
+
+        let request = NSURLRequest(URL: loginURL!)
+        webView.loadRequest(request)
     }
     
     override func didReceiveMemoryWarning() {

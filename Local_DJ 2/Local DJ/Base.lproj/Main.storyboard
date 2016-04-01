@@ -18,18 +18,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUj-h8-w6f">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUj-h8-w6f">
                                 <rect key="frame" x="-39" y="324" width="493" height="88"/>
                                 <state key="normal" title=" " image="LoginButton"/>
                                 <connections>
                                     <action selector="loginWithSpotify:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bes-bX-HDH"/>
                                 </connections>
                             </button>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PH5-QP-XpY">
+                                <rect key="frame" x="29" y="80" width="356" height="596"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" red="0.15194535255432129" green="0.18421635031700134" blue="0.19683161377906799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="uUj-h8-w6f" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0Ve-By-QhD"/>
+                            <constraint firstItem="PH5-QP-XpY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="9" id="22J-gw-0sS"/>
+                            <constraint firstItem="PH5-QP-XpY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="7Uf-Ke-cJ0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PH5-QP-XpY" secondAttribute="trailing" constant="9" id="Bi4-UB-xRR"/>
                             <constraint firstItem="uUj-h8-w6f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aro-SH-klJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PH5-QP-XpY" secondAttribute="bottom" constant="60" id="hcr-bU-zos"/>
+                            <constraint firstItem="PH5-QP-XpY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rBp-tI-9bu"/>
                             <constraint firstItem="uUj-h8-w6f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uEx-f8-Bah"/>
                         </constraints>
                     </view>
@@ -37,6 +46,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="loginButton" destination="uUj-h8-w6f" id="Sbe-32-vAb"/>
+                        <outlet property="webView" destination="PH5-QP-XpY" id="CAn-q3-rXW"/>
                         <segue destination="zyo-fv-qPQ" kind="show" identifier="loginSuccessful" animates="NO" action="showDetailViewController:sender:" id="qHY-pU-SOV"/>
                     </connections>
                 </viewController>
@@ -567,7 +577,7 @@
         <image name="iPhone6PlusLocalDj3.png" width="624" height="1109"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bGq-RH-Z2Y"/>
+        <segue reference="qHY-pU-SOV"/>
         <segue reference="jcP-KE-c2i"/>
     </inferredMetricsTieBreakers>
 </document>
