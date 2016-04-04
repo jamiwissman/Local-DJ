@@ -4,3 +4,4 @@
 
 #import <Spotify/Spotify.h>
 
+#import <BuddyBuildSDK/BuddyBuildSDK.h>
