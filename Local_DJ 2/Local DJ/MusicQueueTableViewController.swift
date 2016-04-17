@@ -143,7 +143,7 @@ class MusicQueueTableViewController: UITableViewController,  SPTAudioStreamingPl
             }
         }
         else{
-            
+            self.spotifySearchBar.becomeFirstResponder()
             if indexPath.row == 0 {
                 let cellID:NSString = "PlayCell"
                 let cell = tableView.dequeueReusableCellWithIdentifier(cellID as String, forIndexPath: indexPath) as! PlayMusicTableViewCell
@@ -212,7 +212,6 @@ class MusicQueueTableViewController: UITableViewController,  SPTAudioStreamingPl
                     }
                 })
             }
-            
             
             self.player.queuePlay({ (error:NSError!) -> Void in
                 if(error != nil){
@@ -362,16 +361,34 @@ class MusicQueueTableViewController: UITableViewController,  SPTAudioStreamingPl
         
         self.tableView.reloadData()
     }
-    
+    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+        searchActive = true
+        if (searchBar.text != "")
+        {
+            SPTSearch.performSearchWithQuery(searchBar.text, queryType: SPTSearchQueryType.QueryTypeTrack, accessToken: session.accessToken) { (error:NSError!, results:AnyObject!) -> Void in
+                let searchResults = results as! SPTListPage
+                
+                self.searchResultsList = searchResults.items
+                self.numSearchResults = self.searchResultsList.count
+                
+                self.tableView.reloadData()
+            }
+        }
+        
+    }
+
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
         searchActive = true
-        SPTSearch.performSearchWithQuery(searchBar.text, queryType: SPTSearchQueryType.QueryTypeTrack, accessToken: session.accessToken) { (error:NSError!, results:AnyObject!) -> Void in
-            let searchResults = results as! SPTListPage
-            
-            self.searchResultsList = searchResults.items
-            self.numSearchResults = self.searchResultsList.count
-
-            self.tableView.reloadData()
+        if (searchBar.text != "")
+        {
+            SPTSearch.performSearchWithQuery(searchBar.text, queryType: SPTSearchQueryType.QueryTypeTrack, accessToken: session.accessToken) { (error:NSError!, results:AnyObject!) -> Void in
+                let searchResults = results as! SPTListPage
+                
+                self.searchResultsList = searchResults.items
+                self.numSearchResults = self.searchResultsList.count
+                
+                self.tableView.reloadData()
+            }
         }
     }
     
